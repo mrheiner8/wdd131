@@ -5,51 +5,36 @@
 }
 
 :root {
-    --main-color: rgba(16, 30, 194, 0.941);
+    --main-color: rgba(0 110 182 / 1);
     --nav-color: rgba(113, 113, 114, 0.846);
     --heading-text-color: #fff;
     --border-color: black;
-    --heading-font: ;
-    --body-font: ;
-    --box-shadow: 0 0 30px gray;
+    --heading-font:"Quicksand", sans-serif ;
+    --body-font: "Quicksand",sans-serif ;
+    --box-shadow: 0 0 15px gray;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / 1fr 1fr 1fr;
+    font-family: var(--body-font);
+    
+}
+h1{
+    grid-column: 1 / 3;
+    font-family: var(--heading-font);
+    margin: 1rem 2rem 5rem;
+    color: rgba(11, 11, 45, 0.846);
+    text-align: center;
+}
+h2{
+    font-family: var(--heading-font);
 }
 
 header {
     text-align: left;
     background-color: var(--main-color);
-    grid-column: 1 / 4;
     text-align: center;
     color: var(--heading-text-color)
-}
-
-h1 {
-    margin: 1rem 2rem 5rem;
-    color: rgba(11, 11, 45, 0.846);
-    grid-column: 1 / 4;
-    text-align: center;
-}
-
-p {
-    text-align: left;
-}
-
-main {
-    padding: 1rem;
-    background-color: #eee;
-    grid-column: 1 / 3;
-}
-
-aside {
-    padding: 1rem;
-    background-color: #fff;
-    grid-column: 3 / 4;
+    
 }
 
 .navigation {
@@ -79,11 +64,39 @@ aside {
     text-decoration-color: yellow;
 }
 
+p {
+    text-align: left;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+img{
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+
+}
+
 footer {
-    background-color: rgb(0 110 182 / 1);
+    background-color: var(--main-color);
     padding: 2rem;
-    grid-column: 1 / 4;
-    color: #fff;
+    color: var(--heading-text-color);
 }
 
 footer p {
