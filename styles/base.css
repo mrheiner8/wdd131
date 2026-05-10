@@ -30,7 +30,6 @@ h2{
 }
 
 header {
-    text-align: left;
     background-color: var(--main-color);
     text-align: center;
     color: var(--heading-text-color)
@@ -47,7 +46,7 @@ header {
 
 .navigation li {
     flex: 1 1 auto;
-    /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+
 }
 
 .navigation a {
