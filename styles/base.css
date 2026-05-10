@@ -88,7 +88,7 @@ main {
 img{
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
-    width: 200;
+    width: 200px;
     height: auto;
 }
 
