@@ -1,3 +1,4 @@
+/* --- RESETS & VARIABLES --- */
 * {
     margin: 0;
     padding: 0;
@@ -6,36 +7,68 @@
 
 :root {
     --main-color: rgba(0 110 182 / 1);
-    --nav-color: rgba(62, 62, 62, 0.846);
+    --nav-color: rgba(113, 113, 114, 0.846);
     --heading-text-color: #fff;
     --border-color: black;
-    --heading-font:"Quicksand", sans-serif ;
-    --body-font: "Quicksand",sans-serif ;
+    --heading-font: "Quicksand", sans-serif;
+    --body-font: "Quicksand", sans-serif;
     --box-shadow: 0 0 15px gray;
 }
 
+/* --- BASE ELEMENTS --- */
 body {
     font-family: var(--body-font);
-    
 }
-h1{
+
+h1 {
     grid-column: 1 / 3;
     font-family: var(--heading-font);
     margin: 1rem 2rem 5rem;
     color: rgba(11, 11, 45, 0.846);
     text-align: center;
 }
-h2{
+
+h2 {
     font-family: var(--heading-font);
 }
 
+p {
+    text-align: left;
+}
+
+img {
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+/* --- PAGE STRUCTURE --- */
 header {
     background-color: var(--main-color);
     text-align: center;
-    color: var(--heading-text-color)
-    
+    color: var(--heading-text-color);
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 2rem;
+    color: var(--heading-text-color);
+}
+
+footer p {
+    text-align: center;
+}
+
+/* --- COMPONENTS --- */
 .navigation {
     list-style: none;
     display: flex;
@@ -46,6 +79,7 @@ header {
 
 .navigation li {
     flex: 1 1 auto;
+    /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
 }
 
 .navigation a {
@@ -62,20 +96,6 @@ header {
     text-decoration-color: yellow;
 }
 
-p {
-    text-align: left;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #eee;
-    max-width: 800px;
-    margin: auto;
-}
-
 .card {
     background-color: #fff;
     padding: 1rem;
@@ -83,21 +103,4 @@ main {
     text-align: center;
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
-}
-
-img{
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    width: 200px;
-    height: auto;
-}
-
-footer {
-    background-color: var(--main-color);
-    padding: 2rem;
-    color: var(--heading-text-color);
-}
-
-footer p {
-    text-align: center;
 }
