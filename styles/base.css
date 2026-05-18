@@ -52,7 +52,7 @@ header {
     color: var(--heading-text-color);
 }
 
-co{
+span{
     padding: auto;
 }
 
@@ -115,7 +115,6 @@ footer p {
 .card-head{
     background-color: var(--main-color);
     color: #eee;
-    padding:;
 }
 
 .card p{
