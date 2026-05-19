@@ -9,12 +9,12 @@
     --main-color: rgba(0 110 182 / 1);
     --nav-color: rgba(238, 240, 111, 0.911);
     --nav-text-color: #fff;
-    --border-color: black;
+    --border-color: #000000;
     --font-color: #333333;
     --background-color: #f4f4f4;
     --heading-font: 'Acme', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
-    --box-shadow: 0 0 15px gray;
+    --box-shadow: 0 0 15px #808080;
 }
 
 /* --- 2. GLOBAL STYLES --- */
@@ -53,11 +53,7 @@ header {
 
 nav {
     width: 100%;
-}
-
-header {
-    font-family: var(--heading-font);
-    font-size: 1.75rem;
+    display: flex;
 }
 
 main{
