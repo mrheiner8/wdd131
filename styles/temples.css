@@ -72,13 +72,17 @@ main{
     border: none;
     background: none;
     cursor: pointer;
+    color: var(--nav-text-color);
 }
 
 .navigation{
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
-   
+}
+
+.navigation.show{
+    display: flex;
 }
 
 .navigation a {
