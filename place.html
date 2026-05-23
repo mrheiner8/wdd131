@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 Place</title>
+    <title>WDD131 Georgia (USA)</title>
     <meta name="description"
-        content="WO3 information about a place page, written for the Brigham Young University class WDD131. HTML, Jss, CSS, Interactive">
+        content="WO3 information about Georgia page, written for the Brigham Young University class WDD131. HTML, Jss, CSS, Interactive, Responsive">
     <meta name="author" content="Michael Heiner">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
@@ -20,11 +20,37 @@
 
 <body>
     <header>
-     <h1>Place</h1>
-     <h2>Fix "Place" Holders</h2>
+     <h1>Georgia (USA)</h1>
     </header>
     <main>
-  
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/savannah-ga-riverfront.webp">
+                <img src="images/forsyth-park-fountain.webp" alt="Tourists enjoy a sunny day at the Forsyth Park fountain in Savannah, Georgia">
+            </picture>
+        </div>
+    
+        <section class="card data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong>59,425 square miles</p>
+            <p><strong>Population:</strong>11.4 million </p>
+            <p><strong>Capital:</strong> Atlanta</p>
+            <p><strong>Languages:</strong> English</p>
+            <p><strong>Currency:</strong> United States Dollar ($)</p>
+            <p><strong>Time Zone:</strong> Eastern Time Zone</p>
+            <p><strong>Calling Code:</strong> +1</p>
+            <p><strong>Internet TLD:</strong> .us</p>
+        </section>
+    
+        <section class="card weather">
+            <h2>Weather</h2>
+            <img src="images/stormy-weather-icon.svg" alt="Stormy Weather icon" width="50" height="50">
+
+            <p><strong>Temperature:</strong> <span id="temerature">84</span>°F</p>
+            <p><strong>Conditions:</strong> Scattered Thunderstorms</p>
+            <p><strong>Wind:</strong> <span id="sindSpeed">10</span> mph</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+        </section>
     </main>
     <footer>
         <p>©<span id="currentYear"></span> 🎷Michael Heiner 🎷 Colorado</p>
