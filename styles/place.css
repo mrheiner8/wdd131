@@ -1,0 +1,110 @@
+/* --- RESETS & VARIABLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgba(0 110 182 / 1);
+    --nav-color: rgba(18, 18, 19, 0.846);
+    --heading-text-color: #fff;
+    --border-color: black;
+    --heading-font: "Quicksand", sans-serif;
+    --body-font: "Quicksand", sans-serif;
+    --box-shadow: 0 0 15px gray;
+}
+
+/* --- BASE ELEMENTS --- */
+body {
+    font-family: var(--body-font);
+}
+
+h1 {
+    grid-column: 1 / 4;
+    font-family: var(--heading-font);
+    margin: 1rem 2rem 5rem;
+    color: rgba(11, 11, 45, 0.846);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+}
+
+p {
+    text-align: left;
+}
+
+img {
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    width: 200px;
+    height: auto;
+    margin: 1rem;
+}
+
+/* --- PAGE STRUCTURE --- */
+header {
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--heading-text-color);
+}
+
+span {
+    padding: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .4rem;
+    padding: 1rem;
+    background-color: #eee;
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 2rem;
+    color: var(--heading-text-color);
+}
+
+footer p {
+    text-align: center;
+}
+
+/* --- COMPONENTS --- */
+
+.card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.card-head {
+    background-color: var(--main-color);
+    color: #eee;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+
+.hero img {
+    float: right;
+}
+
+.cos img {
+    float: left;
+
+}
+
+.card-nav li {
+    padding: .25rem;
+}
