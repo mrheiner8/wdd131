@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+
+    .hero {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    .data {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 2rem;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .weather {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        margin: 2rem;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .weather h2::after {
+        content:" ⛈️";
+    }
+
+    .weather img{
+        display: none;
+    }
+
+    .weather p{
+        padding-bottom: 2.5rem;
+    }
+}

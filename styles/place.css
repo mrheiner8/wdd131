@@ -6,12 +6,11 @@
 }
 
 :root {
-    --main-color: rgba(0 110 182 / 1);
-    --nav-color: rgba(18, 18, 19, 0.846);
+    --main-color: DarkOliveGreen;
+    --second-color: Goldenrod;
     --heading-text-color: #fff;
-    --border-color: black;
-    --heading-font: "Quicksand", sans-serif;
-    --body-font: "Quicksand", sans-serif;
+    --heading-font: "Acme", sans-serif;
+    --body-font: "Roboto", sans-serif;
     --box-shadow: 0 0 15px gray;
 }
 
@@ -21,27 +20,30 @@ body {
 }
 
 h1 {
-    grid-column: 1 / 4;
     font-family: var(--heading-font);
-    margin: 1rem 2rem 5rem;
-    color: rgba(11, 11, 45, 0.846);
+    margin: 1rem 2rem ;
+    color: var(--heading-text-color);
     text-align: center;
 }
 
 h2 {
+    background-color: var(--second-color);
     font-family: var(--heading-font);
+    margin: 1rem 2.5rem 1rem 0rem;
+    color: black;
+    text-align: center;
 }
 
 p {
-    text-align: left;
+    text-align: center;
+    padding-bottom: .75rem;
 }
 
 img {
-    box-shadow: var(--box-shadow);
     border-radius: .5rem;
-    width: 200px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
     height: auto;
-    margin: 1rem;
 }
 
 /* --- PAGE STRUCTURE --- */
@@ -49,20 +51,18 @@ header {
     background-color: var(--main-color);
     text-align: center;
     font-size: 1.5em;
+    padding: 1.1rem;
     color: var(--heading-text-color);
 }
 
-span {
-    padding: auto;
-}
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:1fr;
     gap: .4rem;
     padding: 1rem;
     background-color: #eee;
-    max-width: 800px;
+    max-width:1920px;
     margin: auto;
 }
 
@@ -80,31 +80,30 @@ footer p {
 
 .card {
     background-color: #fff;
-    border: 1px solid var(--border-color);
     text-align: center;
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
 }
 
-.card-head {
-    background-color: var(--main-color);
-    color: #eee;
-}
 
 .card p {
-    padding: 1rem;
+    text-align: left;
 }
 
-
-.hero img {
-    float: right;
+.card p strong{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    padding-right: 0.5rem;
 }
 
-.cos img {
-    float: left;
-
+.hero img{
+    max-width: fit-content;
 }
 
-.card-nav li {
-    padding: .25rem;
+.weather img{
+    width: 75px;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: none;
 }
