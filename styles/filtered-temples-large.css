@@ -1,0 +1,37 @@
+@media (min-width: 800px) {
+
+    /* --- 3. LAYOUT STRUCTURE --- */
+    header,
+    main,
+    footer {
+        max-width: 1000px;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        width: auto;
+        display: flex;
+    }
+
+
+    h1 {
+        grid-column: 1 / 4;
+        margin: 1rem 2rem 5rem;
+        color: var(--font-color);
+        text-align: center;
+    }
+
+    /* --- 4. NAVIGATION & HAMBURGER --- */
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
