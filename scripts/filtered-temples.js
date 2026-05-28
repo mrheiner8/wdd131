@@ -102,20 +102,20 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-1911-thumb.jpg"
     },
 ];
-    function displayTemples(filteredTemples) {
-        const mainElement = document.querySelector("main");
-        mainElement.innerHTML = "";
-        filteredTemples.forEach(temple => {
-            let card = document.createElement("figure");
-            card.innerHTML = `
+function displayTemples(filteredTemples) {
+    const mainElement = document.querySelector("main");
+    mainElement.innerHTML = "";
+    filteredTemples.forEach(temple => {
+        let card = document.createElement("figure");
+        card.innerHTML = `
             <h3>${temple.templeName}</h3>
             <p>Location: ${temple.location}</p>
             <p>Dedication: ${temple.dedicated}</p>
             <p>Size: ${temple.area} sq ft</p>
             <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400" height="250">
             `;
-            mainElement.appendChild(card);
-        });
-    }
+        mainElement.appendChild(card);
+    });
+}
 
-    displayTemples(temples);
+displayTemples(temples);
