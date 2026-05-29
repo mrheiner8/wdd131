@@ -3,6 +3,11 @@ const today = new Date();
 const currentYear = today.getFullYear();
 const hamburgerElement = document.querySelector('#menu');
 const navElement = document.querySelector('.navigation');
+const homeLink = document.querySelector('#home');
+const oldLink = document.querySelector('#old');
+const newLink = document.querySelector('#new');
+const largeLink = document.querySelector('#large');
+const smallLink = document.querySelector('#small');
 
 document.getElementById("currentYear").innerHTML = currentYear;
 
@@ -102,6 +107,29 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-1911-thumb.jpg"
     },
 ];
+
+oldLink.addEventListener("click", () => {
+    const oldTemples = temples.filter(temple => temple.dedicated.substring(0, 4) <= 1900)
+    displayTemples(oldTemples);
+});
+
+newLink.addEventListener("click", () => {
+    const newTemples = temples.filter(temple => temple.dedicated.substring(0, 4) >= 2000)
+    displayTemples(newTemples);
+});
+largeLink.addEventListener("click", () => {
+    const largeTemples = temples.filter(temple => temple.area >= 90000)
+    displayTemples(largeTemples);
+});
+smallLink.addEventListener("click", () => {
+    const smallTemples = temples.filter(temple => temple.area <= 10000)
+    displayTemples(smallTemples);
+});
+homeLink.addEventListener("click", () => {
+    const homeTemples = temples
+    displayTemples(homeTemples);
+});
+
 function displayTemples(filteredTemples) {
     const mainElement = document.querySelector("main");
     mainElement.innerHTML = "";
