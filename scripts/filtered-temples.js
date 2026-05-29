@@ -136,7 +136,7 @@ function displayTemples(filteredTemples) {
     filteredTemples.forEach(temple => {
         let card = document.createElement("figure");
         card.innerHTML = `
-            <h3>${temple.templeName}</h2>
+            <h2>${temple.templeName}</h2>
             <p>Location: ${temple.location}</p>
             <p>Dedication: ${temple.dedicated}</p>
             <p>Size: ${temple.area} sq ft</p>
