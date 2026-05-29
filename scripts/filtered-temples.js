@@ -131,12 +131,12 @@ homeLink.addEventListener("click", () => {
 });
 
 function displayTemples(filteredTemples) {
-    const mainElement = document.querySelector("main");
+    const mainElement = document.querySelector("#card-container");
     mainElement.innerHTML = "";
     filteredTemples.forEach(temple => {
         let card = document.createElement("figure");
         card.innerHTML = `
-            <h3>${temple.templeName}</h3>
+            <h3>${temple.templeName}</h2>
             <p>Location: ${temple.location}</p>
             <p>Dedication: ${temple.dedicated}</p>
             <p>Size: ${temple.area} sq ft</p>

@@ -7,7 +7,7 @@
         max-width: 1000px;
     }
 
-    main {
+    #card-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -19,9 +19,7 @@
 
     h1 {
         grid-column: 1 / 4;
-        margin: 1rem 2rem 5rem;
-        color: var(--font-color);
-        text-align: center;
+        margin: 1rem 2rem 2rem;
     }
 
     /* --- 4. NAVIGATION & HAMBURGER --- */
