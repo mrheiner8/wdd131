@@ -7,7 +7,7 @@
 
 :root {
     --main-color: #be3119;
-    --secondary-color: #f8de82;
+    --secondary-color: #fbe493;
     --background-color: #f5f5f5;
     --heading-text-color: #fffff0;
     --text-color: #3a3131;
@@ -33,10 +33,14 @@ div{
 
 img {
     box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    width: 200px;
-    height: auto;
+    border-radius: .2rem;
+    width: auto;
+    height: 500px;
     margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* --- PAGE STRUCTURE --- */
@@ -50,6 +54,7 @@ header {
 
 main {
     display: grid;
+    text-align: left;
     grid-template-columns: 1fr 1fr;
     gap: .4rem;
     padding: 1rem;
