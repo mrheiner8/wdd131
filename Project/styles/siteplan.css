@@ -40,7 +40,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /* --- PAGE STRUCTURE --- */
@@ -73,3 +72,6 @@ footer p {
 }
 
 /* --- COMPONENTS --- */
+.site-name{
+    grid-column: 1 / 3;
+}
