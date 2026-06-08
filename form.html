@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Heiner | WDD131</title>
+
+    <meta name="description" content="WO1 basic layout page, written for the Brigham Young University class WDD131.">
+    <meta name="author" content="Michael Heiner">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <select name="product" id="product-name" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+            <fieldset>
+                <legend>Overall Rating (Required)</legend>
+                <label for="star1">★</label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+
+                <label for="star2">★★</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+
+                <label for="star3">★★★</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+
+                <label for="star4">★★★★</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+
+                <label for="star5">★★★★★</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>What features did you find useful in the product?<br><i>(Check all that apply)</i></legend>
+
+
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+
+                <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                <label for="ease-of-use">Ease of Use</label>
+
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
+
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
+            </fieldset>
+
+            <fieldset>
+                <Legend>Written Review (optional)</Legend>
+                <textarea id="review" name="review"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <Legend>Name (optional)</Legend>
+                <input type="text" id="user-name" name="user-name">
+            </fieldset>
+
+            <input type="submit" value="Share Review">
+        </form>
+    </main>
+
+
+    <footer>
+        <p>©<span id="currentYear"></span> 🎷Michael Heiner 🎷 Colorado</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

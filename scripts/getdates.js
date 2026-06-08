@@ -1,5 +1,4 @@
-const today = new Date();
-const currentYear = today.getFullYear();
-document.getElementById("currentYear").innerHTML = currentYear;
-
-document.getElementById("lastModified").innerHTML = document.lastModified;
+<footer>
+    <p>©<span id="currentyear"></span> 🎷Michael Heiner 🎷 Colorado</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
