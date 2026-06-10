@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W05 Form | WDD131</title>
+    <title>Product Review Form | WDD131</title>
 
     <meta name="description"
         content="WO5 basic layout for a form page, written for the Brigham Young University class WDD131.">
@@ -31,6 +31,7 @@
         <form action="review.html" method="get">
 
             <fieldset>
+                <label for="product-name">Product Name (Required)</label>
                 <select name="product" id="product-name" required>
                     <option value="" disabled selected>Select a Product...</option>
                 </select>
@@ -70,6 +71,7 @@
 
             <fieldset>
                 <legend>Date of Installation</legend>
+                <label for="insrallation-date">Installation Date (Required)</label>
                 <input type="date" id="installation-date" name="installation-date" required>
             </fieldset>
 
@@ -99,11 +101,13 @@
 
             <fieldset>
                 <legend>Written Review (optional)</legend>
+                <label for="review">Type your review here:</label>
                 <textarea id="review" name="review"></textarea>
             </fieldset>
 
             <fieldset>
                 <legend>Name (optional)</legend>
+                <label for="user-name">Your Name:</label>
                 <input type="text" id="user-name" name="user-name">
             </fieldset>
 

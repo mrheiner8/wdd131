@@ -68,6 +68,11 @@ fieldset {
     border-radius: 5px;
 }
 
+fieldset label {
+    display: block;
+    margin-bottom: .05rem;
+    font-weight: bold;
+}
 legend {
     font-weight: bold;
     font-family: var(--heading-font);
@@ -150,4 +155,17 @@ fieldset input[type="text"] {
     align-items: center;
     /* Centers them together horizontally */
     gap: 0.5rem;
+}
+
+/* --- 4. MEDIA QUERIES --- */
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+        /* Makes the title pop more on tablets and desktops */
+    }
+
+    main {
+        padding: 2rem;
+        /* Adds more breathing room inside the form on wider screens */
+    }
 }
