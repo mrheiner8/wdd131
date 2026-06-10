@@ -1,6 +1,8 @@
-// Select the HTML elements
+// Get current date data for the footer
 const today = new Date();
 const currentYear = today.getFullYear();
+
+// An array of objects holding the product data
 const products = [
     {
         id: "fc-1888",
@@ -28,16 +30,25 @@ const products = [
         averagerating: 5.0
     }
 ];
+
+// Target the HTML select element by its ID
 const productSelect = document.getElementById("product-name");
 
+// Loop through each item in the products array
 products.forEach(product => {
+    // 1. Create a blank <option> tag
     let newOption = document.createElement("option");
-    newOption.value = product.id;
-    newOption.textContent = product.name;
-    productSelect.appendChild(newOption);
 
+    // 2. Set the backend value of the option to the product ID
+    newOption.value = product.id;
+
+    // 3. Set the visible text of the option to the product name
+    newOption.textContent = product.name;
+
+    // 4. Attach the finished option to the select dropdown in the HTML
+    productSelect.appendChild(newOption);
 });
 
+// Inject the footer dates into the HTML spans
 document.getElementById("currentYear").innerHTML = currentYear;
-
 document.getElementById("lastModified").innerHTML = document.lastModified;

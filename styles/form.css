@@ -2,11 +2,13 @@
 * {
     margin: 0;
     padding: 0;
+    /* Forces borders and padding to be included in the element's total width/height */
     box-sizing: border-box;
 }
 
+/* Variables make it easy to change a color or font across the entire site by updating just one line */
 :root {
-    --main-color: rgba(0 110 182 / 1);
+    --main-color: rgba(0, 110, 182, 1);
     --heading-text-color: #fff;
     --form-color: rgb(237, 244, 247);
     --border-color: #000000;
@@ -30,6 +32,7 @@ footer {
     text-align: center;
     max-width: 800px;
     margin: 1rem auto;
+    /* Centers the container horizontally */
     background-color: var(--main-color);
     color: var(--heading-text-color);
     border-radius: .5rem;
@@ -42,11 +45,12 @@ header {
     font-size: 1.75rem;
 }
 
-
 main {
     background-color: var(--form-color);
     display: grid;
+    /* Uses CSS Grid for layout flexibility */
     grid-template-columns: 1fr;
+    /* Takes up 1 fraction of the available space */
     gap: 3rem;
     text-align: left;
     max-width: 800px;
@@ -70,27 +74,31 @@ legend {
     font-size: 125%;
 }
 
+/* Targeting multiple input types to share the same styling */
 select,
 input[type="date"],
 input[type="text"],
 textarea {
     display: block;
+    /* Forces them to sit on their own line */
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 5px;
 }
 
+/* --- VISUAL VALIDATION CUES --- */
+/* Highlights required fields with a red border by default */
 select:required,
 input:required {
     border-left: solid 8px red;
 }
 
+/* Changes the border to green once the user has filled out the required field correctly */
 select:required:valid,
 input:required:valid {
     border-left: solid 8px green;
 }
-
 
 input[type="checkbox"] {
     margin-right: 6px;
@@ -102,27 +110,27 @@ input[type="submit"] {
     border-radius: 5px;
     color: var(--heading-text-color);
     cursor: pointer;
+    /* Changes the mouse to a hand icon on hover */
     padding: 1.5rem;
     font-size: 150%;
-
 }
 
-CSS .features-fieldset {
+/* --- FLEXBOX LAYOUTS --- */
+.features-fieldset {
     display: flex;
     flex-direction: column;
+    /* Stacks the checkbox items vertically */
     gap: 1rem;
-    /* Space between each row */
     padding-top: 1rem;
 }
 
 .checkbox-item {
     display: flex;
-    /* Forces the box and label to sit side-by-side */
     align-items: center;
-    /* Centers them vertically */
+    /* Vertically aligns the text with the square box */
 }
 
-/* We still want the label for Written Review and Name to be block level, so target them directly */
+/* Targets the specific text inputs to add space above them */
 fieldset textarea,
 fieldset input[type="text"] {
     margin-top: 0.5rem;
@@ -131,16 +139,15 @@ fieldset input[type="text"] {
 .rating-container {
     display: flex;
     justify-content: space-evenly;
-    /* Spreads the 5 stars out perfectly */
+    /* Spreads the 5 star groups out evenly across the container */
     margin-top: 1rem;
 }
 
 .star-group {
     display: flex;
     flex-direction: column;
-    /* Stacks the label on top of the input */
+    /* Stacks the star on top of the radio button */
     align-items: center;
-    /* Centers them together */
+    /* Centers them together horizontally */
     gap: 0.5rem;
-    /* Adds a tiny bit of space between the star and the button */
 }
