@@ -19,8 +19,9 @@
 
 <body>
     <header>
-        <img src="images/ascend-logo.webp" alt="Rapids Logo">
-
+        <div class="logo">
+            <img src="images/ascend-logo.webp" alt="Rapids Logo" width="">
+        </div>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html" title="Upcoming Performances">Upcoming Performances</a></li>
@@ -29,8 +30,8 @@
         </nav>
     </header>
     <main>
-        <div>
-        <img src="images/ascend-choir.webp" alt="Ascend Choir">
+        <div class="hero">
+            <img src="images/ascend-choir.webp" alt="Ascend Choir">
         </div>
         <section>
             <h1>Ascend Choir and Orchestra</h1>
@@ -40,12 +41,36 @@
                 <li>Fall Concert</li>
                 <li>The Forgotten Carols</li>
                 <li>The Lamb of God</li>
-                <li>Youth Spring Concert</li>
+                <li>Spring Youth Concert</li>
             </ul>
-            <button>
-                <form action=""></form>
-            </button>
-        </section>    
+
+            <button id="order-btn">Purchase Tickets Here</button>
+
+                <form action="ticket-thanks.html" method="get" id="ticket-form" class="hidden">
+                    <fieldset>
+                        <legend>Performance</legend>
+                        <div>What performance to you want to buy tickets for?</div>
+                        <label><input type="radio" name="performance" value="5">Fall Concert</label>
+                        <label><input type="radio" name="performance" value="20">The Forgotten Carols</label>
+                        <label><input type="radio" name="performance" value="15">The Lamb of God</label>
+                        <label><input type="radio" name="performance" value="5">Spring Youth Concert</label>
+
+                        <label><input type="number" id="quantity" min="1" value="1">How Many Tickets?</label>
+                    
+                    </fieldset>
+
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>last Name* <input type="text" name="lname" required></label>
+                    <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </fieldset>
+                <p>Total: $<span id="total-price">0</span></p>
+                <input type="submit" value="Purchase My Tickets">
+                </form>
+            
+        </section>
     </main>
 
     </main>
