@@ -1,0 +1,78 @@
+/* --- RESETS & VARIABLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #be3119;
+    --secondary-color: #fbe493;
+    --background-color: #f5f5f5;
+    --heading-text-color: #fffff0;
+    --text-color: #3a3131;
+    --border-color: black;
+    --heading-font: "Playfair", serif;
+    --body-font: "Teachers", sans-serif;
+    --box-shadow: 0 0 15px #c0c0c0;
+}
+
+/* --- BASE ELEMENTS --- */
+body {
+    font-family: var(--body-font);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+div {
+    margin: 1rem;
+
+}
+
+img {
+    box-shadow: var(--box-shadow);
+    border-radius: .2rem;
+    width: auto;
+    height: 500px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- PAGE STRUCTURE --- */
+header {
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--heading-text-color);
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    gap: .4rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+footer p {
+    text-align: center;
+}
+
+/* --- COMPONENTS --- */
+.site-name {
+    grid-column: 1 / 3;
+}
