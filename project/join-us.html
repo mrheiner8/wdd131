@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD131 Ascend Orchestra and Choir Site</title>
     <meta name="description"
-        content="Final Project Site, written for the Brigham Young University class WDD131.This is mock up of a 'Join Us' page for an informational site about the Ascend Choir and Orchestra in Colorado Springs Colorado.  HTML, Jss, CSS, Interactive">
+        content="Final Project Site, written for the Brigham Young University class WDD131.This is mock up of a home page for an informational site about the Ascend Choir and Orchestra in Colorado Springs Colorado.  HTML, Jss, CSS, Interactive">
     <meta name="author" content="Michael Heiner">
     <link rel="stylesheet" href="styles/ascend.css">
     <script defer src="scripts/ascend.js"></script>
@@ -29,50 +29,21 @@
         </nav>
     </header>
     <main>
-        <div class="site-name">
-            <h2>Site Name & Rationale</h2>
-            <p><strong>Name:</strong> Ascend Orchestra and Choir</p>
-            <p><strong>Reason:</strong> I chose to name this informational web site after the "Ascend Orchestra and
-                Choir" to inform people about the uplifting
-                nature of their music and the ensemble's interfaith mission to lift and inspire the community.</p>
-            <p><strong>Domain:</strong> ascend-orchestra.org</p>
-        </div>
-        <div>
-            <h2>Purpose:</h2>
-            <p>To inform the public about the Ascend Orchestra and Choir, provide upcoming performance schedules, sell
-                tickets, share its short history and interfaith mission, and recruit musicians.</p>
-        </div>
-        <div>
-            <h2>Target Scenarios:</h2>
-            <p>1. When are the upcoming performances, and how do I get tickets?</p>
-            <p>2. What is the Ascend Orchestra and Choir, and what is its interfaith mission?</p>
-            <p>3. How can I audition or join the ensemble?</p>
-        </div>
-        <div>
-            <h2>Color Schema</h2>
-            <p>#be3119 (Unnamed shade of Red): Main color</p>
-            <p>#fbe493 (Unnamed shade of Yellow): Secondary color </p>
-            <p>#F5F5F5 (WhiteSmoke): Background: color</p>
-            <p>#3a3131 (Unnamed shade of Black): Text color</p>
-            <p>#FFFFF0 (Ivory): Heading text color</p>
-        </div>
-        <div>
-            <h2>Typography</h2>
-            <p>Playfair: For headings</p>
-            <p>Teachers: For body paragraph content </p>
-        </div>
-        <figure>
-            <figcaption>
-                <h2>Mobile View</h2>
-            </figcaption><img src="images/ascend-mobile-site.webp" alt="Ascend Website wireframe for mobile view">
-        </figure>
-        <figure>
-            <figcaption>
-                <h2>Desktop View</h2>
-            </figcaption><img src="images/ascend-desktop-site.webp" alt="Ascend Website wireframe for desktop view">
-        </figure>
+
+
     </main>
     <footer>
-        <p>© 2026 🎷Michael Heiner 🎷 Colorado</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/ascendchoirandorchestra">
+                <img src="images/facebook.svg" alt="*Facebook Icon" width="80">
+            </a>
+            <a href="https://www.instagram.com/ascendchoirandorchestra/">
+                <img src="images/instagram.svg" alt="*Instagram Icon" width="80">
+            </a>
+        </nav>
+        <p>©<span id="currentYear"></span> 🎷Michael Heiner 🎷 Colorado</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
+
+</html>
