@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/ascend.css">
     <link rel="stylesheet" href="styles/ascend-large.css">
     <script defer src="scripts/ascend.js"></script>
+    <script defer src="scripts/join-us.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,6 +49,13 @@
             </fieldset>
 
             <fieldset>
+                <legend>Ensemble Choice*</legend>
+                <label><input type="radio" name="ensemble" value="choir" required> Choir</label>
+                <label><input type="radio" name="ensemble" value="orchestra" required> Orchestra</label>
+                
+            </fieldset>
+
+            <fieldset id="choir-fieldset">
                 <legend>Choir</legend>
                 <div>What part do you normally sing?</div>
                 <label><input type="radio" name="part" value="soprano">Soprano</label>
@@ -56,18 +64,13 @@
                 <label><input type="radio" name="part" value="baritone">Baritone</label>
                 <label><input type="radio" name="part" value="bass">Bass</label>
             
-                <div>
-                <label for="choir-part">What part do you normally sing?</label>
-            <select name="choir" id="choir-part" required>
-                <option value="" disabled selected>Select your part...</option>
-            </select>
-            </div>
+                
             </fieldset>
     
-            <fieldset>
+            <fieldset id="orchestra-fieldset">
                 <legend>Orchestra</legend>
-                <label for="orchestra-instrument">What instrument do you play?</label>
-                <select name="orchestra" id="orchestra-instrument" required>
+                <label for="instrument">What instrument do you play?</label>
+                <select name="instrument" id="instrument" required>
                     <option value="" disabled selected>Select your instrument...</option>
                 </select>
             </fieldset>
