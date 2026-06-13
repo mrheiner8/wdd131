@@ -14,11 +14,13 @@
     form {
         max-width: 80%;
         margin: 0 auto
-    }    
-    
+    }
+
     input[type="text"],
     input[type="email"],
-    input[type="tel"] {
+    input[type="tel"],
+    input[type="number"],
+    select {
         display: block;
         width: 50%;
     }

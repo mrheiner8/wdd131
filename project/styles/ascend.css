@@ -104,22 +104,37 @@ footer nav {
     flex-direction: column;
     align-items: flex-end;
 }
+
+button, 
 fieldset {
     background-color: var(--secondary-color);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
 }
 
-legend{
+button {
+    
+}
+
+legend,
+fieldset div {
     display: block;
-    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
     margin: 0 0 0 1rem;
 }
 
-fieldset label{
-    display:block;
+legend {
+    font-size: 1.5rem;
+}
+
+fieldset div {
+    font-size: 1.25rem;
+}
+
+fieldset label,
+fieldset p {
+    display: block;
     font-size: 1.1rem;
     text-align: left;
     margin: 0.75rem;
@@ -127,7 +142,9 @@ fieldset label{
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+input[type="number"],
+select {
     display: block;
     width: 100%;
     padding: 0.5rem;
@@ -136,6 +153,21 @@ input[type="tel"] {
     border-width: 1px;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+input[type="submit"]{
+
+}
+/* Add this to your ascend.css file */
+input:required:invalid {
+    border-left: 5px solid var(--main-color);
+}
+
+input:required:valid {
+    border-left: 5px solid green;
 }
 
 /* --- COMPONENTS --- */
