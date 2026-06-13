@@ -10,19 +10,18 @@
     <meta name="author" content="Michael Heiner">
     <link rel="stylesheet" href="styles/ascend.css">
     <link rel="stylesheet" href="styles/ascend-large.css">
-    <script defer src="scripts/ascend.js"></script>
-    <script defer src="scripts/tickets.js"></script>
+    <script src="scripts/ascend.js" defer></script>
+    <script src="scripts/tickets.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="images/ascend-logo.webp" alt="Ascend Logo" loading="lazy">
+            <img src="images/ascend-logo.webp" alt="Ascend Logo">
         </div>
         <button id="menu">≡</button>
         <nav>
@@ -37,7 +36,8 @@
         <section class="hero">
             <h1>Ascend Choir & Orchestra</h1>
             <p>Music that Reaches Heavenward</p>
-            <img src="images/ascend-choir.webp" alt="Ascend Choir">
+            <img src="images/ascend-choir.webp" alt="Ascend Choir" height="600"
+            width="800">
         </section>
         <section class="performances">
 
@@ -54,7 +54,7 @@
             <form action="ticket-thanks.html" method="get" id="ticket-form" class="hidden">
                 <fieldset>
                     <legend>Performance</legend>
-                    <div>What performance to you want to buy tickets for?</div>
+                    <div>What performance do you want to buy tickets for?</div>
                     <label><input type="radio" name="performance" value="10">Fall Concert</label>
                     <label><input type="radio" name="performance" value="20">The Forgotten Carols</label>
                     <label><input type="radio" name="performance" value="15">The Lamb of God</label>
@@ -68,7 +68,7 @@
                 <fieldset>
                     <legend>Your Information</legend>
                     <label>First Name <input type="text" name="fname" autocomplete="given-name" required></label>
-                    <label>last Name <input type="text" name="lname" autocomplete="family-name" required></label>
+                    <label>Last Name <input type="text" name="lname" autocomplete="family-name" required></label>
                     <label>Phone <input type="tel" name="phone" placeholder="1235551234" autocomplete="tel"></label>
                     <label>Email <input type="email" name="email" placeholder="someone@gmail.com" autocomplete="email"
                             required></label>
@@ -93,10 +93,10 @@
         </div>
         <nav class="socialmedia">
             <a href="https://www.facebook.com/ascendchoirandorchestra">
-                <img src="images/facebook.svg" alt="Facebook Icon" width="80">
+                <img src="images/facebook.svg" alt="Facebook Icon" width="80" height="80">
             </a>
             <a href="https://www.instagram.com/ascendchoirandorchestra/">
-                <img src="images/instagram.svg" alt="Instagram Icon" width="80">
+                <img src="images/instagram.svg" alt="Instagram Icon" width="80" height="80">
             </a>
         </nav>
     </footer>
