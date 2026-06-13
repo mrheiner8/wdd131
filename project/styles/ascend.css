@@ -117,17 +117,18 @@ footer p {
     display: block;
     text-decoration: none;
     padding: 1rem;
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: 1.25rem;
 }
 
 .navigation a:hover {
     background-color: var(--nav-hover-color);
     border-radius: .5rem;
-    color: var(--hover-text-color)
+    color: var(--hover-text-color);
 }
 
 .navigation a:visited {
-    color: var(--border-color)
+    color: var(--border-color);
 }
 
 .navigation a.active {
