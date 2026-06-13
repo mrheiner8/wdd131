@@ -1,12 +1,26 @@
 @media(min-width: 600px) {
+
+    header,
+    main,
+    footer {
+        max-width: 1000px;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
     }
+
+    footer nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
     #menu {
         display: none;
     }
-    .navigation{
+
+    .navigation {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -14,14 +28,13 @@
         font-size: 1.25rem;
     }
 
-    header, main, footer{
-        max-width: 1000px;
-    }
+
     .navigation li {
         display: flex;
         align-items: center;
     }
-    .navigation li::after{
+
+    .navigation li::after {
         content: "|";
         padding: 0 1rem;
         color: var(--text-color);

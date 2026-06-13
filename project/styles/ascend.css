@@ -65,6 +65,7 @@ footer {
     padding: 1rem;
     font-family: var(--heading-font);
 }
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -100,7 +101,8 @@ footer p {
 }
 
 footer nav {
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* --- COMPONENTS --- */
@@ -126,6 +128,7 @@ footer nav {
     display: flex;
 }
 
+/* 1. Base Link State */
 .navigation a {
     display: block;
     text-decoration: none;
@@ -134,18 +137,18 @@ footer nav {
     font-size: 1.25rem;
 }
 
+/* 2. Hover State (Will now successfully overwrite visited when hovered) */
 .navigation a:hover {
-    background-color: var(--nav-hover-color);
+    background-color: var(--main-color);
     border-radius: .5rem;
-    color: var(--hover-text-color);
+    color: var(--heading-text-color);
+    box-shadow: var(--box-shadow);
 }
 
-.navigation a:visited {
-    color: var(--border-color);
-}
-
+/* 3. Active Page Class */
 .navigation a.active {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .hidden {
