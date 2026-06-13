@@ -102,6 +102,7 @@ footer p {
     display: none;
     list-style: none;
     flex-direction: column;
+    width: 100%;
     background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: .5rem;
