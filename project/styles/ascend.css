@@ -111,8 +111,7 @@ fieldset {
     box-shadow: var(--box-shadow);
 }
 
-button, 
-input[type="submit"] {
+.btn {
     background-color: var(--main-color);
     color: var(--heading-text-color);
     font-family: var(--heading-font);
@@ -126,8 +125,7 @@ input[type="submit"] {
     transition: transform 0.2s ease;
 }
 
-button:hover,
-input[type="submit"]:hover {
+.btn:hover {
     background-color: var(--nav-hover-color);
     color: var(--heading-text-color);
     transform: scale(1.02);
