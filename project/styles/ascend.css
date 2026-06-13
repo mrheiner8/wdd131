@@ -95,7 +95,6 @@ main {
 
 }
 
-
 footer p {
     text-align: center;
 }
@@ -110,8 +109,6 @@ fieldset {
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
 }
-
-
 
 legend,
 fieldset div {
@@ -211,6 +208,21 @@ input:required:valid {
 }
 
 /* 3. Active Page Class */
+#menu{
+    font-size: 2.5rem;
+    background: transparent;
+    border: none;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+    color: var(--heading-text-color);
+    cursor: pointer;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
 .navigation a.active {
     font-weight: bold;
     text-decoration: underline;
