@@ -64,8 +64,17 @@ footer {
     color: var(--heading-text-color);
     padding: 1rem;
     font-family: var(--heading-font);
+}
+header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
 }
@@ -88,6 +97,10 @@ main {
 
 footer p {
     text-align: center;
+}
+
+footer nav {
+    justify-content: flex-end;
 }
 
 /* --- COMPONENTS --- */
