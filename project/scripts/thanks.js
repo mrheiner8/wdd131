@@ -1,6 +1,6 @@
 // --- 1. URL PARAMETERS: GET FORM DATA ---
 // This built-in JS feature grabs the data from the URL
-const urlParams = new URLSearchParams(window.location.search)
+const urlParams = new URLSearchParams(window.location.search);
 const quantity = urlParams.get("quantity");
 const performancePrice = urlParams.get("performance");
 // --- PLURALIZE TICKET WORDS ---
