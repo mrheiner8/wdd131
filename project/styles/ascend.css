@@ -256,9 +256,10 @@ input:required:valid {
     text-align: left;
     line-height: 1.6;
 }   
-ul {
+
+.mission{
     text-align: left;
-    padding-left: 2rem;
+    padding: 2rem;
 }
 
 .socialmedia img {
