@@ -21,20 +21,14 @@ if (transactionCount >= 2) {
 
 
 // --- 3. TRANSLATE PRICE TO NAME ---
-let concertName = ``;
-if (performancePrice === "10") {
-    concertName = `the Fall or Spring Concert`; // Since both are $5
-} else if (performancePrice === "15") {
-    concertName = `The Lamb of God`;
-} else if (performancePrice === "20") {
-    concertName = `The Forgotten Carols`;
-} else if (performancePrice === "5") {
-                concertName = `the Spring Youth Concert`; 
-} else {
-        concertName = `our upcoming performance` ; {
+const concertList = {
+    "10": "the Fall or Spring Concert",
+    "15": "The Lamb of God",
+    "20": "The Forgotten Carols",
+    "5": "the Spring Youth Concert"
+};
 
-        }
-}
+let concertName = concertList[performancePrice] || "our upcoming performance";
 
 // --- 4. OUTPUT TO HTML ---
 // --- 4. OUTPUT TO HTML ---
