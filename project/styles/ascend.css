@@ -32,6 +32,10 @@ h2 {
     text-align: center;
 }
 
+h1 {
+    min-height: 160px;
+}
+
 div {
     margin: 1rem;
 
