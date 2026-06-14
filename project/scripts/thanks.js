@@ -37,8 +37,9 @@ if (performancePrice === "10") {
 }
 
 // --- 4. OUTPUT TO HTML ---
-document.getElementById("qty-display").textContent = `${quantity}`;
-document.getElementById("perf-display").textContent = `${concertName}`;
+// --- 4. OUTPUT TO HTML ---
+document.getElementById("quantity").textContent = `${quantity}`;
+document.getElementById("concertName").textContent = `${concertName}`;
 
 //--- 5. If the quantity is greater than 1, add the "s" to both spans ---
 if (Number(quantity) > 1) {
